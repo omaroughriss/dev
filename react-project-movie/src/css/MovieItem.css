@@ -1,0 +1,100 @@
+.movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #232222;
+    border: 1px solid #272626;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+
+.movie-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(166, 165, 165, 0.2);
+}
+
+.movie-item h2 {
+    font-size: 1.2em;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.movie-item span {
+    color: #ff172b;
+}
+
+
+.movie-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+.movie-item p {
+    font-size: 1em;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.movie-item .detail-btn {
+    background-color: #ff172b;
+    color: white;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.movie-item .detail-btn:hover {
+    background-color: #ff4757;
+}
+
+.movie-item .wishlist-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ff6b6b;
+    transition: transform 0.2s;
+    margin-top: 5px;
+}
+
+.movie-item .wishlist-icon:hover {
+    transform: scale(1.2);
+}
+
+.movie-item .in-wishlist {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff172b;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

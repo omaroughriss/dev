@@ -1,0 +1,21 @@
+.movie-search {
+    padding: 20px;
+    background-color: #121313;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.movie-search input:focus {
+    border-color: #ff172b;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
